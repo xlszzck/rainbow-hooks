@@ -1,15 +1,5 @@
-declare module '*.css';
-declare module '*.less';
-declare module '*.scss';
-declare module '*.sass';
-declare module '*.svg';
-declare module '*.png';
-declare module '*.jpg';
-declare module '*.jpeg';
-declare module '*.gif';
-
 declare module 'rainbow-hooks' {
-  export function useRequest(url: string, options: HeadersInit, other: any): Response;
+  export function useRequest(url: string, options: HeadersInit, other: any): Body.json | Body.text;
 
   export interface InterceptorsOptions {
     headers?: IHeaders;
@@ -20,11 +10,6 @@ declare module 'rainbow-hooks' {
 }
 
 type IHeaders = Headers | { Authorization: string } | { 'Content-Type': 'application/json; charset=utf-8' } | { Accept: 'application/json' };
-
-// type IHeaders = {
-//   Headers;
-//   Authorization: string;
-// };
 
 export interface InterceptorsOptions {
   headers?: IHeaders;

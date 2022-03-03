@@ -1,6 +1,6 @@
 // import hash from 'hash.js';
 import { stringify } from 'qs';
-import { getCookie } from '../utils';
+// import { getCookie } from '../utils';
 import { InterceptorsOptions, otherOptions } from '../../typings';
 
 const codeMessage = {
@@ -20,7 +20,6 @@ const codeMessage = {
   503: '服务不可用，服务器暂时过载或维护。',
   504: '网关超时。',
 };
-
 
 // const cachedSave = (response, hashcode) => {
 //   /**
@@ -73,12 +72,10 @@ export default function request(url: string, option: InterceptorsOptions, { requ
   //   // credentials: 'include',
   // };
 
-  // const token = getCookie('token');
-
   const newOptions: InterceptorsOptions = {
     // ...defaultOptions,
     ...options,
-    headers: { Authorization: getCookie('token') },
+    // headers: { Authorization: getCookie('token') },
   };
 
   if (['POST', 'PUT', 'DELETE'].includes(newOptions.method)) {

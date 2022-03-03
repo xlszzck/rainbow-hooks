@@ -1,6 +1,6 @@
 {
   "name": "rainbow-hooks",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "常用的自定义React Hooks方法",
   "main": "dist/index.cjs.js",
   "scripts": {
