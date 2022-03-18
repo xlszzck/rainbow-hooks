@@ -1,0 +1,15 @@
+node_modules
+coverage
+.git
+.vscode
+.DS_Store
+/yarn.lock
+src
+LICENSE
+package-lock.json
+package.json
+rollup.config.js
+tsconfig.json
+tsconfig.tsbuildinfo
+typings.d.ts
+yarn.lock
